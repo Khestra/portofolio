@@ -1,0 +1,552 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif ;
+    box-sizing: border-box
+}
+
+body{
+    background:#BDB76B ;
+    color: #fff;
+}
+#header{
+    width:100%;
+    height:100vh;
+    background-image: url(images/background2.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+.container{
+    padding:10px 10%;  
+}
+.logo {
+    font-size: 65px; 
+    font-family: 'Georgia', serif; 
+    font-weight: bold;
+    font-style: italic; 
+    text-decoration: none; 
+    float: left;
+    width:140px;
+}
+.red{
+    color:red;
+}
+.black{
+    color:black;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    position:relative;
+}
+nav ul li a:hover {
+    color: #ff004f;
+}
+  nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.header-text{
+   margin-top: 5%;
+   font-size:30px;
+}
+.header-text h1{
+    font-size:60px;
+    margin-top:20px;
+}
+
+.orange{
+    color:#000080;
+    font-style:italic;
+    font-size:50px;
+}
+.indigo{
+    color:#000080;
+    font-style:italic;
+    font-size:45px;
+}
+.violet{
+    color:#000080;
+    font-size:40px;
+    font-style:italic;
+}
+.lemon-green{
+    color:#00008B;
+    font-size:40px;
+    font-style:italic;
+}
+.light-blue{
+    color:#000080;
+    font-style:italic;
+    font-size:40px;
+}
+.blop{
+    color:red;
+    font-style:italic;
+    font-size:40px;
+}
+.cod{
+    font-size:40px;
+    color:#708090;
+    
+}
+/*-------------about----------*/
+#about{
+    padding:80px 0;
+    color:black;
+}
+.row{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.about-col-1{
+    flex-basis:35%;
+}
+.about-col-1 img{
+    width:100%;
+    border-radius:15px;
+}
+.about-col-2{
+    flex-basis:60%;
+}
+.sub-title{
+    font-size:60px;
+    font-weight:600;
+    color:black;
+}
+#technologies {
+    background-color: #001f3f; /* Navy blue background */
+    padding: 60px 0;
+    background-image: linear-gradient(145deg, #001f3f 0%, #004080 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+#technologies::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#technologies::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff; /* White text for title */
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* Technologies Grid */
+.tech-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tech-card {
+    background-color:#29A8D7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(50% - 20px);
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px);
+}
+
+.tech-card h3 {
+    font-size: 1.5rem;
+    color: #001f3f; /* Navy blue color for the card headings */
+    margin-bottom: 10px;
+}
+
+.tech-card p {
+    font-size: 1rem;
+    color: black;
+}
+
+/* Hover Glow Effect */
+.tech-card:hover {
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tech-card {
+        flex-basis: 100%;
+    }
+}
+#experience {
+    background-color: #001f3f; /* Navy blue background */
+    padding: 40px 0;
+    background-image: linear-gradient(145deg, #001f3f 0%, #003366 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add design elements like circles */
+#experience::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#experience::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+}
+
+.section-title {
+    text-align: left; /* Align title to the far left */
+    font-size: 2.5rem;
+    color: black; /* White text for better contrast */
+    margin-bottom: 40px;
+    z-index: 2;
+    position: relative;
+}
+
+/* Experience Grid */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+    justify-content: start; /* Align the grid items to the far left */
+    z-index: 2;
+    position: relative;
+}
+
+.experience-card {
+    background-color:#29A8D7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+}
+
+.experience-card h3 {
+    font-size: 1.5rem;
+    color: #001f3f; /* Navy blue color for headings */
+    margin-bottom: 10px;
+}
+
+.experience-card p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.experience-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experience-card ul li {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .experience-grid {
+        grid-template-columns: 1fr; /* Full width on smaller screens */
+    }
+}
+#projects {
+    padding: 40px 0;
+}
+
+.sub-title {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two columns for the images and text */
+    gap: 40px;
+}
+
+.work {
+    background-color:#29A8D7 ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.work:hover{
+    transform: translateY(-10px)
+}
+.work img {
+    max-width: 70%; /* Reduce the width of the images */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-description {
+    text-align: left;
+}
+
+.project-description h3 {
+    font-size: 1.5rem;
+    color:#001f3f ;
+    margin-bottom: 10px;
+}
+
+.project-description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-description ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .work-list {
+        grid-template-columns: 1fr; /* On small screens, show projects in one column */
+    }
+
+    .work img {
+        max-width: 90%; /* Increase image size slightly for mobile */
+    }
+}
+.contact-left{
+    flex-basis:35%;
+}
+.contact-right{
+    flex-basis:60%;
+}
+.contact-left p{
+    margin-top:30px;
+}
+.social-icons{
+    margin-top:30px;
+}
+.social-icons a{
+    text-decoration:none;
+    font-size:30px;
+    margin-right:15px;
+    color:#CD5C5C;
+    display:inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color:#ff004f;
+    transform: translateY(-10px);
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:brown ; /* Button background color */
+    color: white; /* Button text color */
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #005f8b; /* Darker shade on hover */
+}
+.contact-right form{
+    width:100%;
+}
+form input, form textarea{
+    width:100%;
+    border:0;
+    outline:none;
+    background:#262626;
+    padding:15px;
+    margin:15px 0;
+    color:brown;
+    font-size:18px;
+    border-radius:6px;
+}
+form .btn2{
+    padding:14px 60px;
+    font-size:18px;
+    margin-top:20px;
+    curson:pointer;
+}
+.copyright{
+    width:100%;
+    text-align:center;
+    padding:25px 0;
+    background:black;
+    font-weight:600;
+    margin-top:20px;
+}
+.copyright p{
+    color:white;
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none; /* Menu hidden by default on mobile */
+        background-color: #483D8B;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav ul.show {
+        display: flex; /* Menu is shown when class "show" is added */
+    }
+
+    .fas.fa-bars {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .fas.fa-times {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    nav ul.show ~ .fa-times {
+        display: block;
+    }
+
+    nav ul.show ~ .fa-bars {
+        display: none;
+    }
+}
+    /* Header text adjustments */
+    .header-text {
+        margin-top: 10%;
+        text-align: center;
+        font-size: 20px;
+    }
+    .header-text h1 {
+        font-size: 40px;
+    }
+    
+
+    /* Experience section adjustments */
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card {
+        margin-bottom: 20px;
+    }
+
+    /* Projects section adjustments */
+    .work-list {
+        grid-template-columns: 1fr; /* One column for mobile */
+    }
+
+    .work img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Contact form adjustments */
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Footer text center */
+    .copyright p {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+#msg{
+    color:#61b752;
+    margin-top:-40px;
+    display:block;
+}
